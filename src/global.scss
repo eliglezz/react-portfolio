@@ -1,0 +1,23 @@
+$mainColor: #5328f0;
+
+$width: 1200px;
+$widthMed: 768px;
+$widthMini: 400px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+};
+
+@mixin mobileMini {
+    @media (max-width: #{$widthMini}){
+        @content
+    }
+};
+
+@mixin mobileMed {
+    @media (max-width: #{$widthMed}){
+        @content
+    }
+}
